@@ -7,8 +7,9 @@ import { Const } from '@/utils/const';
 /* 约定写法，动态设置plugin-request配置 */
 // https://umijs.org/zh-CN/plugins/plugin-request#%E8%BF%90%E8%A1%8C%E6%97%B6%E9%85%8D%E7%BD%AE
 export const request: RequestConfig = {
-  timeout: 15000,
+  timeout: Const.API_TIME_OUT,
   errorConfig: {
+    // 按约定格式返回错误对象
     adaptor: resData => {
       return {
         ...resData,

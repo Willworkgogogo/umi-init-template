@@ -20,26 +20,26 @@ export interface IApi {
 export const config: Record<ENV_TYPES, IConfigItem> = {
   dev: {
     links: {
-      baidu: '//baidu.com',
+      baidu: 'http://baidu.com',
     },
     api: {
-      hybrid: '//192.168.152.161:20040',
+      hybrid: 'http://192.168.152.161:20040',
     },
   },
   test: {
     links: {
-      baidu: '//baidu.com',
+      baidu: 'http://baidu.com',
     },
     api: {
-      hybrid: '//192.168.152.161:20040',
+      hybrid: 'http://192.168.152.161:20040',
     },
   },
   prod: {
     links: {
-      baidu: '//baidu.com',
+      baidu: 'http://baidu.com',
     },
     api: {
-      hybrid: '//192.168.152.161:20040',
+      hybrid: 'http://192.168.152.161:20040',
     },
   },
 };
